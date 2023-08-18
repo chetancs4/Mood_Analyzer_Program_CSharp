@@ -4,13 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter a message: ");
-            string inputMessage = Console.ReadLine();
-
-            MoodAnalyser moodAnalyser = new MoodAnalyser(inputMessage);
-            string mood = moodAnalyser.AnalyseMood();
-
-            Console.WriteLine($"Mood: {mood}");
+            Console.WriteLine("Welcome to Mood Analyzer Program");
+            MoodAnalyzer mood = new MoodAnalyzer("I am Happy");
+            Console.WriteLine("Mood is " + mood.AnalyseMood());
         }
     }
 }
